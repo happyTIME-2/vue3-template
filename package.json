@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build",
+    "build": "vite-ssg build",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -24,6 +24,7 @@
     "@unocss/preset-web-fonts": "^0.27.2",
     "@unocss/reset": "^0.27.2",
     "@vitejs/plugin-vue": "^2.2.0",
+    "@vueuse/head": "^0.7.5",
     "pnpm": "^6.32.3",
     "typescript": "^4.5.4",
     "unocss": "^0.27.2",
@@ -31,6 +32,8 @@
     "unplugin-vue-components": "^0.17.21",
     "vite": "^2.8.0",
     "vite-plugin-pages": "^0.21.3",
+    "vite-ssg": "^0.17.11",
+    "vite-ssg-sitemap": "^0.1.6",
     "vue-tsc": "^0.29.8"
   }
 }

@@ -2,6 +2,7 @@ import path from 'path'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import Pages from 'vite-plugin-pages'
+import generateSitemap from 'vite-ssg-sitemap'
 import Components from 'unplugin-vue-components/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import VueI18n from '@intlify/vite-plugin-vue-i18n'
@@ -53,6 +54,13 @@ export default defineConfig({
       include: [path.resolve(__dirname, 'locales/**')],
     }),
   ],
+
+  ssgOptions: {
+    script: 'async',
+    formatting: 'minify',
+    onFinished() { generateSitemap() },
+  },
+
   optimizeDeps: {
     include: [
       'vue',
