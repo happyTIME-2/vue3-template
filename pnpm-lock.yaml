@@ -29,6 +29,7 @@ specifiers:
 
 dependencies:
   '@vueuse/core': 7.7.1_vue@3.2.31
+  '@vueuse/head': 0.7.5_vue@3.2.31
   pinia: 2.0.11_typescript@4.6.2+vue@3.2.31
   vue: 3.2.31
   vue-demi: 0.12.1_vue@3.2.31
@@ -44,7 +45,6 @@ devDependencies:
   '@unocss/preset-web-fonts': 0.27.2
   '@unocss/reset': 0.27.2
   '@vitejs/plugin-vue': 2.2.4_vite@2.8.6+vue@3.2.31
-  '@vueuse/head': 0.7.5_vue@3.2.31
   pnpm: 6.32.3
   typescript: 4.6.2
   unocss: 0.27.2
@@ -622,7 +622,7 @@ packages:
       vue: '>=3'
     dependencies:
       vue: 3.2.31
-    dev: true
+    dev: false
 
   /@vueuse/shared/7.7.1_vue@3.2.31:
     resolution: {integrity: sha512-rN2qd22AUl7VdBxihagWyhUNHCyVk9IpvBTTfHoLH9G7rGE552X1f+zeCfehuno0zXif13jPw+icW/wn2a0rnQ==}

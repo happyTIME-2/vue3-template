@@ -2,6 +2,16 @@
   const props = defineProps({
     id: String
   })
+
+  useHead({
+    title: 'My Pages',
+    meta: [
+    {
+      name: `description`,
+      content: `Website description`,
+    },
+  ],
+  })
 </script>
 
 <template>

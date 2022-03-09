@@ -33,6 +33,7 @@ export default defineConfig({
         'vue-router',
         'vue-i18n',
         '@vueuse/core',
+        '@vueuse/head',
       ],
       dts: 'src/auto-imports.d.ts',
     }),
@@ -66,6 +67,7 @@ export default defineConfig({
       'vue',
       'vue-router',
       '@vueuse/core',
+      '@vueuse/head',
     ],
     exclude: [
       'vue-demi',
