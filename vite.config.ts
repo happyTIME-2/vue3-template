@@ -46,7 +46,22 @@ export default defineConfig({
       dts: 'src/components.d.ts',
     }),
 
-    Unocss(),
+    Unocss({
+      // variants: [
+      //   (matcher) => {
+      //     if (!matcher.startsWith('hover:'))
+      //       return matcher
+      //     return {
+      //       matcher: matcher.slice(6),
+      //       selector: s => `${s}:hover`
+      //     }
+      //   }
+      // ],
+      rules: [
+        [/^m-(\d+)$/, ([, d]) => ({ margin: `${parseInt(d)}rem` })],
+        [/^p-(\d+)$/, (match) => ({ padding: `${parseInt(match[1]) / 4}rem` })],
+      ]
+    }),
     
 
     VueI18n({

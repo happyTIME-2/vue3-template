@@ -1,7 +1,8 @@
 import { ViteSSG } from 'vite-ssg'
 import { createPinia } from 'pinia'
 import App from './App.vue'
-import routes from "~pages";
+import routes from "~pages"
+
 import '@unocss/reset/tailwind.css'
 import './styles/main.css'
 import 'uno.css'

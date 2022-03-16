@@ -1,0 +1,5 @@
+about: 
+  intro: about
+  nameIntro: my name is
+  ageIntro: my age is
+  name: '{name}'
